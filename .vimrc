@@ -1,5 +1,5 @@
 syntax on
-set sw=4 ts=4
+set sw=4 ts=4 sts=4
 set number
 set autoindent
 
@@ -38,3 +38,9 @@ autocmd BufReadPost *
      \ endif
 autocmd BufReadPost * silent! normal! g`"zv
 
+autocmd BufNewFile,BufRead *.yml
+	\ setlocal ts=2 sw=2 sts=2 expandtab
+autocmd BufNewFile,BufRead *.tf
+	\ setlocal ts=2 sw=2 sts=2 expandtab
+autocmd BufNewFile,BufRead *.py
+	\ setlocal ts=4 sw=4 sts=4 expandtab
