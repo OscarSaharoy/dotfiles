@@ -53,3 +53,7 @@ __prompt_command() {
 	PS1+="$ "
 }
 
+mkcd() {
+    mkdir $@
+    cd $@
+}
